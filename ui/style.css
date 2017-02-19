@@ -20,5 +20,5 @@ body {
     height: 200px;
 }
 .container{
-    text-align:center;
+    align-items:center;
 }
