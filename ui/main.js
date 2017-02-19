@@ -13,6 +13,6 @@ button.onclick=function()
             }
         }
     };
-    request.open('GET','http://divyanshuj.imad.hasura-app.io/counter',true);
+    request.open('GET','https://divyanshuj.imad.hasura-app.io/counter',true);
     request.send(null);
 };
