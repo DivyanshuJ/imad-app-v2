@@ -9,10 +9,10 @@ app.use(morgan('combined'));
 var articles=
 {
     'article-one':{
-    title: "Article One | Divyanshu Jha",
+    tit: "Article One | Divyanshu Jha",
     heading: "Article One",
     date: "Feb 13,2017",
-    content: `<p>
+    cont: `<p>
             This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
         </p>
         <p>
@@ -21,18 +21,18 @@ var articles=
 }
 ,
 'article-two':{
-    title: "Article Two | Divyanshu Jha",
+    tit: "Article Two | Divyanshu Jha",
     heading: "Article Two",
     date: "Feb 14,2017",
-    content: `<p>
+    cont: `<p>
             This is the content of my second article.
         </p>`
 },
 'article-three':{
-    title: "Article Three | Divyanshu Jha",
+    tit: "Article Three | Divyanshu Jha",
     heading: "Article Three",
     date: "Feb 18,2017",
-    content: `<p>
+    cont: `<p>
             This is the content of my third article.
         </p>`
 }
@@ -40,14 +40,14 @@ var articles=
 
 function createTemplate(data)
 {
-    var title=data.title;
+    var tit=data.tit;
     var heading=data.heading;
     var date=data.date;
-    var content=data.content;
+    var cont=data.cont;
 var htmlTemplate=`<html>
     <head>
         <title>
-            ${title}
+            ${tit}
         </title>
             <meta name="viewport" content="width-device-width,initial-scale=1/">
                 <link href="/ui/style.css" rel="stylesheet" />
@@ -62,7 +62,7 @@ var htmlTemplate=`<html>
             ${heading}
         </h3>
         <div>${date}</div>
-        ${content}
+        ${cont}
         </div>
     </body>
 </html>`
