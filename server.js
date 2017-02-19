@@ -96,9 +96,9 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 var names=[];
-app.get('/submit-name/:name',function(req,res)
+app.get('/submit-name',function(req,res)///submit-name?name=xxxxxx
 {
-    var name=req.params.name;
+    var name=req.query.name;
     //JSON: JavaScript Object Notation->way of converting Javascript Objects into strings
     names.push(name);
     res.send(JSON.stringify(names));//convert array into string
