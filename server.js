@@ -73,7 +73,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/multimedia', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'multimedia.html'));
+  res.sendFile(path.join(__dirname, 'multimedia.html'));
 });
 var counter=0;
 app.get('/counter',function(req,res){
